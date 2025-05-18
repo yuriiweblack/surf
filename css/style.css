@@ -524,8 +524,44 @@ body{
         padding: 70px 0;
     }
 
+    .site-images {
+        margin-bottom: 75px;
+    }
+
+    .activities__info{
+        flex-wrap: wrap;
+        margin-bottom: 50px;
+    }
+
+    .activities__title,
+    .activities__text{
+        flex-basis: 100%;
+    }
+
+    .activities__title {
+        font-size: 44px;
+        line-height: 60px;
+    }
+
+    .activities__text p{
+        margin-bottom: 30px;
+    }
+
 
 }
+
+
+@media(max-width: 800px) {
+    .activities__list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .activities__buttons-book {
+        text-align: center;
+        width: 100%;
+    }
+}
+
 
 
 
@@ -586,6 +622,19 @@ body{
         bottom: 46px;
         font-size: 29px;
         line-height: 37px;       
+    }
+
+    .activities__list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .site-images{
+        display: none;
+    }
+
+    .activities__title {
+        font-size: 36px;
+        line-height: 54px;
     }
 
 }
